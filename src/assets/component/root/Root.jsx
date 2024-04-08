@@ -1,10 +1,18 @@
+import Footer from "../navber/Footer";
 import Navber from "../navber/Navber";
+import { Outlet } from "react-router-dom";
 
 const Root = () => {
     return (
-        <div className="max-w-[90%] mx-auto">
+     <div>
+           <div className="max-w-[90%] mx-auto">
            <Navber></Navber>
-        </div>
+           <Outlet></Outlet>
+           </div>
+           <Footer></Footer>
+           
+       
+     </div>
     );
 };
 

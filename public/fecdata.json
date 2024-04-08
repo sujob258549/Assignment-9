@@ -1,0 +1,128 @@
+ [
+    {
+        "id": 1,
+        "category": "Hotel",
+        "image": "hotel_image_1.jpg",
+        "estate_title": "Grand Hotel Paradise",
+        "segment_name": "Luxury",
+        "description": "Experience luxury and comfort at Grand Hotel Paradise.",
+        "price": "$300 per night",
+        "status": "rent",
+        "area": "700 sq ft",
+        "location": "Paris, France",
+        "facilities": [
+            "Swimming Pool",
+            "Spa",
+            "Restaurant"
+        ],
+        "other_info": {
+            "rooms": 100,
+            "rating": 5
+        }
+    },
+    {
+        "id": 2,
+        "category": "Motel",
+        "image": "motel_image_1.jpg",
+        "estate_title": "Cozy Motel Retreat",
+        "segment_name": "Standard",
+        "description": "Enjoy a comfortable stay at our cozy motel retreat.",
+        "price": "$80 per night",
+        "status": "rent",
+        "area": "300 sq ft",
+        "location": "Austin, Texas",
+        "facilities": [
+            "Free Parking",
+            "Wi-Fi",
+            "Breakfast"
+        ],
+        "other_info": {
+            "rooms": 30,
+            "rating": 4
+        }
+    },
+    {
+        "id": 3,
+        "category": "Resort",
+        "image": "resort_image_1.jpg",
+        "estate_title": "Tropical Beach Resort",
+        "segment_name": "Luxury",
+        "description": "Escape to a tropical paradise at our beach resort.",
+        "price": "$500 per night",
+        "status": "rent",
+        "area": "1000 sq ft",
+        "location": "Bali, Indonesia",
+        "facilities": [
+            "Private Beach",
+            "Infinity Pool",
+            "Spa"
+        ],
+        "other_info": {
+            "villas": 50,
+            "rating": 5
+        }
+    },
+    {
+        "id": 4,
+        "category": "Vacation Rental",
+        "image": "vacation_rental_image_1.jpg",
+        "estate_title": "Modern Vacation Home",
+        "segment_name": "Standard",
+        "description": "Experience a comfortable stay at our modern vacation home.",
+        "price": "$200 per night",
+        "status": "rent",
+        "area": "1500 sq ft",
+        "location": "Orlando, Florida",
+        "facilities": [
+            "Private Pool",
+            "Game Room",
+            "BBQ Area"
+        ],
+        "other_info": {
+            "bedrooms": 4,
+            "bathrooms": 3
+        }
+    },
+    {
+        "id": 5,
+        "category": "Lodge",
+        "image": "lodge_image_1.jpg",
+        "estate_title": "Mountain Lodge Retreat",
+        "segment_name": "Standard",
+        "description": "Embrace nature at our cozy mountain lodge retreat.",
+        "price": "$150 per night",
+        "status": "rent",
+        "area": "800 sq ft",
+        "location": "Aspen, Colorado",
+        "facilities": [
+            "Fireplace",
+            "Hiking Trails",
+            "Game Room"
+        ],
+        "other_info": {
+            "cabins": 10,
+            "rating": 4
+        }
+    },
+    {
+        "id": 6,
+        "category": "Guesthouse",
+        "image": "guesthouse_image_1.jpg",
+        "estate_title": "Charming Guesthouse",
+        "segment_name": "Standard",
+        "description": "Experience warm hospitality at our charming guesthouse.",
+        "price": "$100 per night",
+        "status": "rent",
+        "area": "400 sq ft",
+        "location": "Dublin, Ireland",
+        "facilities": [
+            "Garden",
+            "Free Breakfast",
+            "Wi-Fi"
+        ],
+        "other_info": {
+            "rooms": 6,
+            "rating": 4
+        }
+    }
+]
