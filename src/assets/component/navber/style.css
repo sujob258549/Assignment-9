@@ -1,0 +1,22 @@
+.manu a.active{
+    border: 2px solid green;
+    border-radius: 6px;
+ }
+ a.active:hover{
+    background-color: rgb(193, 193, 147);
+    transition: .4s;
+}
+
+.manu a{
+    padding: 10px 20px;
+    background-color: rgb(224, 230, 235);
+    margin: 0 5px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+
+ a:hover{
+    background-color: rgb(122, 204, 166);
+    transition: .4s;
+}
