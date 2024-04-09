@@ -34,8 +34,8 @@ const Navber = () => {
                 </ul>
             </div>
             <div className="navbar-end relative">
-                {user?.email ? <div className="flex gap-2 items-center ">
-                    <div className="tooltip text-xl font-medium" data-tip={user.displayName}>
+                {user?.photoURL || user?.email ? <div className="flex gap-2 items-center ">
+                    <div className="tooltip text-xl font-medium" data-tip={ user.displayName ? user.displayName : 'No name'}>
                         <img className="w-14 border-2 border-black rounded-full" src={user?.photoURL} alt="" />
                     </div>
 

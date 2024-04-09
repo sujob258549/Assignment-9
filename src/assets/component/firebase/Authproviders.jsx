@@ -21,26 +21,27 @@ const Authproviders = ({ children }) => {
     // google
     const signInGoogle = () => {
         return signInWithPopup(auth, googleprovider)
-       .then(result =>{
-        const loginUser = result.user;
-        setuser(loginUser);
-       })
-       .catch(error=>(
-        console.error(error)
-       ))
+            .then(result => {
+                const loginUser = result.user;
+                setuser(loginUser);
+            })
+            .catch(error => (
+                console.error(error)
+            ))
     }
 
     // github
 
     const signIngithub = () => {
         return signInWithPopup(auth, githubprovider)
-        .then(result =>{
-            const loginUsers = result.user;
-            setuser(loginUsers);
-           })
-           .catch(error=>(
-            console.error(error)
-           ))
+            .then(result => {
+                const loginUsers = result.user;
+
+                setuser(loginUsers);
+            })
+            .catch(error => (
+                console.error(error)
+            ))
     }
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, currentuser => {
@@ -54,9 +55,9 @@ const Authproviders = ({ children }) => {
     }, [])
 
     const signout = () => {
-      return  signOut(auth)
+        return signOut(auth)
             .then(() => {
-
+                setuser('')
             }).catch((error) => {
                 console.error(error)
             });
