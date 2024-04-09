@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { CreatAuth } from "../firebase/Authproviders";
-import { Navigate } from "react-router-dom";
+
 
 
 const Register = () => {
@@ -43,6 +43,7 @@ const Register = () => {
                 setsuccessSignIn('Seccess creat Your Acout Plese Logine Button click')
             })
             .catch(error => {
+                console.log(error)
                 setsignupError('email-already-in-use')
             })
             

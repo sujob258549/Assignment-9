@@ -6,3 +6,4 @@ npm list for react
 4. npm install swiper
 5. npm install react-icons --save
 6. npm install firebase
+7. npm install react icone 
