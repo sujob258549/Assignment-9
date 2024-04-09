@@ -1,128 +1,130 @@
+
  [
     {
-        "id": 1,
-        "category": "Hotel",
-        "image": "hotel_image_1.jpg",
-        "estate_title": "Grand Hotel Paradise",
-        "segment_name": "Luxury",
-        "description": "Experience luxury and comfort at Grand Hotel Paradise.",
-        "price": "$300 per night",
-        "status": "rent",
-        "area": "700 sq ft",
-        "location": "Paris, France",
-        "facilities": [
-            "Swimming Pool",
-            "Spa",
-            "Restaurant"
-        ],
-        "other_info": {
-            "rooms": 100,
-            "rating": 5
-        }
+      "id": 1,
+      "category": "Hotel",
+      "image": "https://images.pexels.com/photos/6466302/pexels-photo-6466302.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "estate_title": "Grand Hotel Paradise",
+      "segment_name": "Luxury",
+      "description": "Experience luxury and comfort at Grand Hotel Paradise. Situated in the heart of Paris, our hotel offers guests a lavish retreat with breathtaking views of the city skyline. Each room is elegantly furnished and equipped with modern amenities to ensure a relaxing stay. Indulge in gourmet dining at our on-site restaurant, where world-class chefs prepare delectable dishes using fresh, locally sourced ingredients. Unwind with a refreshing swim in our rooftop infinity pool or pamper yourself with a rejuvenating spa treatment. Whether you're visiting for business or pleasure, Grand Hotel Paradise promises an unforgettable experience.",
+      "price": "$300 per night",
+      "status": "rent",
+      "area": "700 sq ft",
+      "location": "Paris, France",
+      "facilities": [
+        "Swimming Pool",
+        "Spa",
+        "Restaurant"
+      ],
+      "other_info": {
+        "rooms": 100,
+        "rating": 5
+      }
     },
     {
-        "id": 2,
-        "category": "Motel",
-        "image": "motel_image_1.jpg",
-        "estate_title": "Cozy Motel Retreat",
-        "segment_name": "Standard",
-        "description": "Enjoy a comfortable stay at our cozy motel retreat.",
-        "price": "$80 per night",
-        "status": "rent",
-        "area": "300 sq ft",
-        "location": "Austin, Texas",
-        "facilities": [
-            "Free Parking",
-            "Wi-Fi",
-            "Breakfast"
-        ],
-        "other_info": {
-            "rooms": 30,
-            "rating": 4
-        }
+      "id": 2,
+      "category": "Motel",
+      "image": "https://images.pexels.com/photos/6466301/pexels-photo-6466301.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "estate_title": "Cozy Motel Retreat",
+      "segment_name": "Standard",
+      "description": "Escape the hustle and bustle of city life and retreat to our cozy motel in Austin, Texas. Nestled amidst scenic landscapes, Cozy Motel Retreat offers guests a peaceful haven where they can relax and unwind. Our comfortable rooms are tastefully decorated and feature all the essential amenities for a comfortable stay. Start your day with a complimentary breakfast before exploring the nearby attractions. Whether you're traveling for business or leisure, our motel provides a convenient and affordable accommodation option.",
+      "price": "$80 per night",
+      "status": "rent",
+      "area": "300 sq ft",
+      "location": "Austin, Texas",
+      "facilities": [
+        "Free Parking",
+        "Wi-Fi",
+        "Breakfast"
+      ],
+      "other_info": {
+        "rooms": 30,
+        "rating": 4
+      }
     },
     {
-        "id": 3,
-        "category": "Resort",
-        "image": "resort_image_1.jpg",
-        "estate_title": "Tropical Beach Resort",
-        "segment_name": "Luxury",
-        "description": "Escape to a tropical paradise at our beach resort.",
-        "price": "$500 per night",
-        "status": "rent",
-        "area": "1000 sq ft",
-        "location": "Bali, Indonesia",
-        "facilities": [
-            "Private Beach",
-            "Infinity Pool",
-            "Spa"
-        ],
-        "other_info": {
-            "villas": 50,
-            "rating": 5
-        }
+      "id": 3,
+      "category": "Resort",
+      "image": "https://images.pexels.com/photos/6205756/pexels-photo-6205756.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "estate_title": "Tropical Beach Resort",
+      "segment_name": "Luxury",
+      "description": "Indulge in a luxurious getaway at Tropical Beach Resort in Bali, Indonesia. Surrounded by pristine beaches and lush tropical gardens, our resort offers guests a serene escape from everyday life. Stay in one of our spacious villas, each elegantly appointed with modern furnishings and private balconies overlooking the ocean. Lounge by the infinity pool or unwind with a massage at our on-site spa. Enjoy exquisite dining options at our beachfront restaurants, where you can savor fresh seafood and authentic Balinese cuisine. Whether you're seeking adventure or relaxation, Tropical Beach Resort has something for everyone.",
+      "price": "$500 per night",
+      "status": "rent",
+      "area": "1000 sq ft",
+      "location": "Bali, Indonesia",
+      "facilities": [
+        "Private Beach",
+        "Infinity Pool",
+        "Spa"
+      ],
+      "other_info": {
+        "villas": 50,
+        "rating": 5
+      }
     },
     {
-        "id": 4,
-        "category": "Vacation Rental",
-        "image": "vacation_rental_image_1.jpg",
-        "estate_title": "Modern Vacation Home",
-        "segment_name": "Standard",
-        "description": "Experience a comfortable stay at our modern vacation home.",
-        "price": "$200 per night",
-        "status": "rent",
-        "area": "1500 sq ft",
-        "location": "Orlando, Florida",
-        "facilities": [
-            "Private Pool",
-            "Game Room",
-            "BBQ Area"
-        ],
-        "other_info": {
-            "bedrooms": 4,
-            "bathrooms": 3
-        }
+      "id": 4,
+      "category": "Vacation Rental",
+      "image": "https://images.pexels.com/photos/18312992/pexels-photo-18312992/free-photo-of-ritz-carlton-hotel-in-baku.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "estate_title": "Modern Vacation Home",
+      "segment_name": "Standard",
+      "description": "Experience the ultimate getaway at our modern vacation home in Orlando, Florida. Located in a gated community, our spacious home offers guests privacy and comfort during their stay. With four bedrooms and three bathrooms, there's plenty of room for the whole family. Relax in the private pool or unwind in the game room, equipped with a pool table and foosball. The home also features a fully equipped kitchen, perfect for preparing meals together. Explore Orlando's famous theme parks and attractions, just a short drive away. Make lasting memories with loved ones at our modern vacation home.",
+      "price": "$200 per night",
+      "status": "rent",
+      "area": "1500 sq ft",
+      "location": "Orlando, Florida",
+      "facilities": [
+        "Private Pool",
+        "Game Room",
+        "BBQ Area"
+      ],
+      "other_info": {
+        "bedrooms": 4,
+        "bathrooms": 3
+      }
     },
     {
-        "id": 5,
-        "category": "Lodge",
-        "image": "lodge_image_1.jpg",
-        "estate_title": "Mountain Lodge Retreat",
-        "segment_name": "Standard",
-        "description": "Embrace nature at our cozy mountain lodge retreat.",
-        "price": "$150 per night",
-        "status": "rent",
-        "area": "800 sq ft",
-        "location": "Aspen, Colorado",
-        "facilities": [
-            "Fireplace",
-            "Hiking Trails",
-            "Game Room"
-        ],
-        "other_info": {
-            "cabins": 10,
-            "rating": 4
-        }
+      "id": 5,
+      "category": "Lodge",
+      "image": "https://images.pexels.com/photos/3769150/pexels-photo-3769150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "estate_title": "Mountain Lodge Retreat",
+      "segment_name": "Standard",
+      "description": "Escape to the mountains and experience rustic charm at Mountain Lodge Retreat in Aspen, Colorado. Surrounded by towering pine trees and snow-capped peaks, our cozy lodge offers guests a tranquil setting for relaxation and adventure. Stay in one of our comfortable cabins, each featuring a cozy fireplace and breathtaking views of the mountains. Explore nearby hiking trails or spend the day skiing on world-class slopes. After a day of outdoor activities, return to the lodge and unwind in the game room with friends and family. Whether you're seeking adventure or a quiet retreat, Mountain Lodge Retreat has something for everyone.",
+      "price": "$150 per night",
+      "status": "rent",
+      "area": "800 sq ft",
+      "location": "Aspen, Colorado",
+      "facilities": [
+        "Fireplace",
+        "Hiking Trails",
+        "Game Room"
+      ],
+      "other_info": {
+        "cabins": 10,
+        "rating": 4
+      }
     },
     {
-        "id": 6,
-        "category": "Guesthouse",
-        "image": "guesthouse_image_1.jpg",
-        "estate_title": "Charming Guesthouse",
-        "segment_name": "Standard",
-        "description": "Experience warm hospitality at our charming guesthouse.",
-        "price": "$100 per night",
-        "status": "rent",
-        "area": "400 sq ft",
-        "location": "Dublin, Ireland",
-        "facilities": [
-            "Garden",
-            "Free Breakfast",
-            "Wi-Fi"
-        ],
-        "other_info": {
-            "rooms": 6,
-            "rating": 4
-        }
+      "id": 6,
+      "category": "Guesthouse",
+      "image": "https://images.pexels.com/photos/5490830/pexels-photo-5490830.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "estate_title": "Charming Guesthouse",
+      "segment_name": "Standard",
+      "description": "Experience the warmth and hospitality of Ireland at our charming guesthouse in Dublin. Conveniently located near the city center, our guesthouse offers comfortable accommodations and personalized service. Each room is tastefully decorated with traditional Irish furnishings and modern amenities. Start your day with a hearty Irish breakfast, served in our cozy dining room. Explore Dublin's historic landmarks and vibrant culture, just steps away from our guesthouse. Return to a warm welcome and unwind in our peaceful garden oasis. Whether you're traveling for business or pleasure, our guesthouse provides a home away from home.",
+      "price": "$100 per night",
+      "status": "rent",
+      "area": "400 sq ft",
+      "location": "Dublin, Ireland",
+      "facilities": [
+        "Garden",
+        "Free Breakfast",
+        "Hiking Trails",
+        "Game Room"
+      ],
+      "other_info": {
+        "cabins": 10,
+        "rating": 4
+      }
     }
-]
+  ]
