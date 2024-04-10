@@ -1,13 +1,28 @@
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash, FaGithub, FaGoogle } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { CreatAuth } from "../firebase/Authproviders";
 
 const Login = () => {
     const [success, setSuccess] = useState('');
     const [signupError, setsignupError] = useState('');
-    const { loginInUser, signInGoogle,signIngithub } = useContext(CreatAuth)
+    const { loginInUser, signInGoogle, signIngithub } = useContext(CreatAuth)
     const [shoandHideIcone, setShoandHideIcone] = useState(false);
+    const location = useLocation();
+    const navigate = useNavigate();
+    const from = location?.state || '/';
+
+     const sosallogin = (provider) => {
+        provider()
+            .then((result) => {
+                navigate(from);
+               console.log(result)
+            })
+            .catch((error) => {
+                console.error(error);
+                setsignupError('An error occurred during login. Please try again.');
+            });
+    };
 
 
     const handelSubmitLogin = e => {
@@ -61,11 +76,11 @@ const Login = () => {
                         </div>
                     </form>
                     <div className="mx-auto mb-10">
-                        <button onClick={()=>signInGoogle()} className="btn btn-outline  text-sm mr-3 ">
+                        <button onClick={() => sosallogin(signInGoogle)} className="btn btn-outline  text-sm mr-3 ">
                             <FaGoogle className="text-green-500 text-xl font-bold"></FaGoogle>
                             Log with Google
                         </button>
-                        <button onClick={()=>signIngithub()} className="btn btn-outline  mt-2">
+                        <button onClick={() => sosallogin(signIngithub)} className="btn btn-outline  mt-2">
                             <FaGithub className="text-xl font-bold"></FaGithub>
                             Log with Gothub
                         </button>
