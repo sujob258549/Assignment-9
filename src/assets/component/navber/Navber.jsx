@@ -10,6 +10,8 @@ const Navber = () => {
         <NavLink to={'/'}>Home</NavLink>
         <NavLink to={'/signup'}>Sign In</NavLink>
         <NavLink to={'/location'}>Location</NavLink>
+        <NavLink to={'/profile'}>Prfile</NavLink>
+        <NavLink to={'/updateprofile'}>Update Prfile</NavLink>
 
     </>
     return (
