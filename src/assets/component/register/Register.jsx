@@ -3,7 +3,8 @@ import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { CreatAuth } from "../firebase/Authproviders";
 import { Navigate } from "react-router-dom";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Register = () => {
@@ -22,18 +23,18 @@ const Register = () => {
         const conframpassowrd = e.target.conframPassword.value;
         const checked = e.target.checked.checked;
         if (password.length < 6) {
-            setsignupError('password enter 6 carector or  a longer!! ');
+            toast.error('password enter 6 carector or  a longer!! ');
             return;
         }
         if (password !== conframpassowrd) {
             return setsignupError('password and confam password No carect!!')
         }
         else if (!/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/.test(password)) {
-            setsignupError('Please use a stronger password.');
+            toast.error('Please use a stronger password.');
             return;
         }
         if (!checked) {
-            setsignupError('Please tramp and condition check!!');
+            toast.error('Please tramp and condition check!!');
             return;
         }
 
@@ -43,11 +44,11 @@ const Register = () => {
             .then(result => {
                 console.log(result)
                 upadateprofile(name, photourl)
-                setsuccessSignIn('Seccess creat Your Acout Plese Logine Button click')
+               toast.success('Seccess creat Your Acout Plese Logine Button click')
             })
             .catch(error => {
                 console.log(error)
-                setsignupError('email-already-in-use')
+                toast.error('email-already-in-use')
             })
         return <Navigate to={'/login'}></Navigate>
 
@@ -115,6 +116,7 @@ const Register = () => {
 
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };

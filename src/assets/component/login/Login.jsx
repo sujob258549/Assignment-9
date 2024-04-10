@@ -2,6 +2,8 @@ import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash, FaGithub, FaGoogle } from "react-icons/fa6";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { CreatAuth } from "../firebase/Authproviders";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const [success, setSuccess] = useState('');
@@ -33,11 +35,11 @@ const Login = () => {
         loginInUser(email, password)
             .then(result => {
                 console.log(result);
-                setSuccess('Success! You are logged in.');
+                toast.success('Success! You are logged in.');
             })
             .catch(error => {
                 console.error(error);
-                setsignupError('invalid password Plese Forget password')
+                toast.error('invalid password Plese Forget password')
 
             });
     };
@@ -89,6 +91,7 @@ const Login = () => {
                     <p className="font-semibold text-[16px] pb-10 text-center">Dont’t Have An Account ? <Link to={'/signup'} className="text-[#F75B5F]">Register</Link></p>
                 </div>
             </div>
+            <ToastContainer />
         </div>
 
     )

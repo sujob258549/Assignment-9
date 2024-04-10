@@ -7,3 +7,4 @@ npm list for react
 5. npm install react-icons --save
 6. npm install firebase
 7. npm install react icone 
+8. npm install --save react-toastify
