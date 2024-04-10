@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { CreatAuth } from "../firebase/Authproviders";
+import { Navigate } from "react-router-dom";
 
 
 
@@ -9,7 +10,7 @@ const Register = () => {
     const [shoandHideIcone, setShoandHideIcone] = useState(false)
     const [signupError, setsignupError] = useState('');
     const [successSignIn, setsuccessSignIn] = useState('');
-    const { creatUser } = useContext(CreatAuth)
+    const { creatUser, upadateprofile } = useContext(CreatAuth)
     const handelsubmitRegiste = e => {
         e.preventDefault();
         setsignupError('')
@@ -24,30 +25,33 @@ const Register = () => {
             setsignupError('password enter 6 carector or  a longer!! ');
             return;
         }
-        if(password !== conframpassowrd){
-            return  setsignupError('password and confam password No carect!!')
-          }
-       else if (!/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/.test(password)) {
+        if (password !== conframpassowrd) {
+            return setsignupError('password and confam password No carect!!')
+        }
+        else if (!/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/.test(password)) {
             setsignupError('Please use a stronger password.');
             return;
         }
-        if(!checked){
+        if (!checked) {
             setsignupError('Please tramp and condition check!!');
             return;
         }
-       
+
         console.log(name, email, photourl, password, conframpassowrd, checked);
         creatUser(email, password)
+
             .then(result => {
                 console.log(result)
+                upadateprofile(name, photourl)
                 setsuccessSignIn('Seccess creat Your Acout Plese Logine Button click')
             })
             .catch(error => {
                 console.log(error)
                 setsignupError('email-already-in-use')
             })
-            
-        }      
+        return <Navigate to={'/login'}></Navigate>
+
+    }
     return (
         <div>
             <div className="py-10 mx-auto max-w-[90%]">
@@ -108,7 +112,7 @@ const Register = () => {
                         </form>
                         <p className="font-semibold text-[16px] pb-10 text-center">Already Have An Account? <Link to={'/login'} className="text-[#F75B5F]">Login</Link></p>
                     </div>
-                   
+
                 </div>
             </div>
         </div>

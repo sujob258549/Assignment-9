@@ -5,18 +5,17 @@ import { Link } from "react-router-dom";
 const StaticSection = () => {
     const [allnews, setAllnews] = useState([]);
     useEffect(() => {
-        fetch('../../../../public/fecdata.json')
+        fetch('/fecdata.json')
             .then(res => res.json())
             .then(data => setAllnews(data))
     }, [])
-    console.log(allnews)
     return (
         <div className="py-10 md:py-16 lg:py-24">
              <h2 className="text-xl md:text-5xl text-center font-bold">Hospitality quelity </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10 md:py-16 ">
           {
                 allnews.map(singelNews => (
-                    <div  key={singelNews.id} className='border-2 pt-5 shadow hover:-mx-10 -z-1 rounded-md hover'>
+                    <div  key={singelNews.id} className='border-2 pt-5 shadow hover:-mx-2 -z-1 rounded-md hover'>
                     
                         <h2 className='text-xl px-5 font-semibold'>{singelNews.estate_title}</h2>
                         <img className='px-5 pt-5' src={singelNews.image} alt="" />

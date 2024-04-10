@@ -34,12 +34,12 @@ const Navber = () => {
                 </ul>
             </div>
             <div className="navbar-end relative">
-                {user?.photoURL || user?.email ? <div className="flex gap-2 items-center ">
+                { user ? <div className="flex gap-2 items-center ">
                     <div className="tooltip text-xl font-medium" data-tip={ user.displayName ? user.displayName : 'No name'}>
-                        <img className="w-14 border-2 border-black rounded-full" src={user?.photoURL} alt="" />
+                        <img className="w-14 border-2 border-black rounded-full" src={user?.photoURL} alt="NO Image" />
                     </div>
 
-                    <button onClick={() => signout()} className="btn text-xl font-medium text-white px-5 hover:text-black bg-[#7AA93C] rounded-md">Sign Out</button>
+                    <button onClick={signout} className="btn text-xl font-medium text-white px-5 hover:text-black bg-[#7AA93C] rounded-md">Sign Out</button>
                 </div>
 
                     :

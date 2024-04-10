@@ -1,4 +1,4 @@
-import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import auth from "./firebase.config";
 
@@ -6,15 +6,15 @@ export const CreatAuth = createContext(null);
 const Authproviders = ({ children }) => {
 
     const [user, setuser] = useState(null)
-    console.log(user)
 
     const googleprovider = new GoogleAuthProvider();
     const githubprovider = new GithubAuthProvider();
 
     const creatUser = (email, passowrd) => {
-        return createUserWithEmailAndPassword(auth, email, passowrd)
+        return createUserWithEmailAndPassword(auth, email, passowrd);
+
     }
-    const loginInUser = (email, passowrd) => {
+    const loginInUser = (email, passowrd,) => {
         return signInWithEmailAndPassword(auth, email, passowrd)
     }
 
@@ -24,6 +24,7 @@ const Authproviders = ({ children }) => {
             .then(result => {
                 const loginUser = result.user;
                 setuser(loginUser);
+                console.log(result)
             })
             .catch(error => (
                 console.error(error)
@@ -44,15 +45,18 @@ const Authproviders = ({ children }) => {
             ))
     }
     useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, currentuser => {
-            setuser(currentuser)
-
-        })
-
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setuser(user);
+            } 
+            else {
+                setuser(null);
+            }
+        });
         return () => {
             unsubscribe();
-        }
-    }, [])
+        };
+    }, []);
 
     const signout = () => {
         return signOut(auth)
@@ -61,6 +65,13 @@ const Authproviders = ({ children }) => {
             }).catch((error) => {
                 console.error(error)
             });
+    };
+
+    const upadateprofile = (name, image) => {
+        updateProfile(auth.currentUser, {
+            displayName: name,
+            photoURL: image
+        })
     }
 
     const authinfo = {
@@ -69,7 +80,8 @@ const Authproviders = ({ children }) => {
         signInGoogle,
         signIngithub,
         user,
-        signout
+        signout,
+        upadateprofile
     }
     return (
         <CreatAuth.Provider value={authinfo}>
