@@ -14,11 +14,11 @@ const Login = () => {
     const navigate = useNavigate();
     const from = location?.state || '/';
 
-     const sosallogin = (provider) => {
+    const sosallogin = (provider) => {
         provider()
             .then((result) => {
                 navigate(from);
-               console.log(result)
+                console.log(result)
             })
             .catch((error) => {
                 console.error(error);
@@ -47,9 +47,12 @@ const Login = () => {
 
     return (
         <div className="py-10 mx-auto max-w-[90%]">
-            <div>
-                <div className="card shadow shrink-0 w-full md:w-[50%] lg:w-[40%]  bg-base-100 mx-auto my-10">
-                    <h1 className="text-[35px] font-bold text-center pt-10">Login your account</h1>
+            <div className="-top-10">
+                <div className="relative card shadow shrink-0 w-full md:w-[50%] lg:w-[40%]  bg-base-100 mx-auto my-10">
+                    <div >
+                        <img className="w-40  mx-auto" src="https://i.ibb.co/4T00VND/kisspng-computer-icons-login-management-user-5ae155f3386149-6695613615247170432309-removebg-preview.png" alt="" />
+                    </div>
+                    <h1 className="text-[35px] font-bold text-center pt-4">Login your account</h1>
                     <form className="card-body" onSubmit={handelSubmitLogin}>
                         <div className="form-control">
                             <label className="label">

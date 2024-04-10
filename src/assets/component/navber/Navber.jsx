@@ -9,6 +9,7 @@ const Navber = () => {
 
         <NavLink to={'/'}>Home</NavLink>
         <NavLink to={'/signup'}>Sign In</NavLink>
+        <NavLink to={'/location'}>Location</NavLink>
 
     </>
     return (

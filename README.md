@@ -8,3 +8,4 @@ npm list for react
 6. npm install firebase
 7. npm install react icone 
 8. npm install --save react-toastify
+8. npm install react react-dom leaflet

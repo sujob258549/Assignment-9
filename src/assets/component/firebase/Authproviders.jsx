@@ -44,10 +44,12 @@ const Authproviders = ({ children }) => {
                 console.error(error)
             ))
     }
+
+    // manege user
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
-                setuser(user);
+                 setuser(user);
             } 
             else {
                 setuser(null);
@@ -58,6 +60,7 @@ const Authproviders = ({ children }) => {
         };
     }, []);
 
+    // loge out
     const signout = () => {
         return signOut(auth)
             .then(() => {
@@ -67,6 +70,7 @@ const Authproviders = ({ children }) => {
             });
     };
 
+    // update data
     const upadateprofile = (name, image) => {
         updateProfile(auth.currentUser, {
             displayName: name,

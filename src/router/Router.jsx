@@ -5,6 +5,7 @@ import Login from "../assets/component/login/Login";
 import Register from "../assets/component/register/Register";
 import Detail from "../assets/component/detaoil/Detail";
 import PrivateRoute from "../assets/component/privaterute/PrivateRoute";
+import Location from "../assets/component/location/Location";
 
 
 const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
             {
                 path: '/signup',
                 element: <Register></Register>
+            },
+            {
+                path: '/location',
+                element: <Location></Location>
             },
             {
                 path: '/statatik/:id',
