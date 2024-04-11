@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { CreatAuth } from "../firebase/Authproviders";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './style.css'
 
 const Login = () => {
     const [success, setSuccess] = useState('');
@@ -46,7 +47,8 @@ const Login = () => {
 
 
     return (
-        <div className="py-10 mx-auto max-w-[90%]">
+      <div className="image">
+          <div className="py-10 mx-auto max-w-[90%]">
             <div className="-top-10">
                 <div className="relative card shadow shrink-0 w-full md:w-[50%] lg:w-[40%]  bg-base-100 mx-auto my-10">
                     <div >
@@ -96,6 +98,7 @@ const Login = () => {
             </div>
             <ToastContainer />
         </div>
+      </div>
 
     )
 };

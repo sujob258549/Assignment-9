@@ -8,6 +8,7 @@ import PrivateRoute from "../assets/component/privaterute/PrivateRoute";
 import Location from "../assets/component/location/Location";
 import Profile from "../assets/component/profile/Profile";
 import Updateprofile from "../assets/component/profile/Updateprofile";
+import About from "../assets/component/about/About";
 
 
 const router = createBrowserRouter([
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
             {
                 path: '/profile',
                 element: <PrivateRoute><Profile></Profile></PrivateRoute>
+            },
+            {
+                path: '/about',
+                element: <About></About>
             },
             {
                 path: '/statatik/:id',

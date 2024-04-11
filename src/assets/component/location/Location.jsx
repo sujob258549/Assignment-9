@@ -1,19 +1,31 @@
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import './location.css'; // Import CSS file here
 
-const Location = () => {
+import GoogleMapReact from 'google-map-react';
+
+export const Location = () => {
+    const AnyReactComponent = ({ text }) => <div>{text}</div>;
+
+    const defaultProps = {
+        center: {
+            lat: 10.99835602,
+            lng: 10.01502627
+        },
+        zoom: 11
+    };
+
     return (
-        <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
-            <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            <Marker position={[51.505, -0.09]}>
-                <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
-                </Popup>
-            </Marker>
-        </MapContainer>
+        <div style={{ height: '100vh', width: '100%' }}>
+            <GoogleMapReact
+                bootstrapURLKeys={{ key: "" }}
+                defaultCenter={defaultProps.center}
+                defaultZoom={defaultProps.zoom}
+            >
+                <AnyReactComponent
+                    lat={10.99835602}
+                    lng={77.01502627}
+                    text="My Marker"
+                />
+            </GoogleMapReact>
+        </div>
     );
 };
 

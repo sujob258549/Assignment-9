@@ -44,7 +44,7 @@ const Register = () => {
             .then(result => {
                 console.log(result)
                 upadateprofile(name, photourl)
-               toast.success('Seccess creat Your Acout Plese Logine Button click')
+                toast.success('Seccess creat Your Acout Plese Logine Button click')
             })
             .catch(error => {
                 console.log(error)
@@ -55,10 +55,10 @@ const Register = () => {
     }
     return (
         <div>
-            <div className="py-10 mx-auto max-w-[90%]">
+            <div className="image2">
+                <div className="py-10 mx-auto max-w-[90%]">
 
-                <div>
-                    <div className="card shadow shrink-0 w-full md:w-[50%]   bg-base-100 mx-auto my-10">
+                    <div className="card shadow shrink-0 w-full md:w-[50%] bg-[#ffffff4e]   mx-auto my-10">
                         <h1 className="text-[35px] font-bold text-center pt-10">Register your account</h1>
                         <form className="card-body" onSubmit={handelsubmitRegiste}>
                             <div className="form-control">

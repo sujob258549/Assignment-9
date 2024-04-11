@@ -12,6 +12,7 @@ const Authproviders = ({ children }) => {
 
     const creatUser = (email, passowrd) => {
         return createUserWithEmailAndPassword(auth, email, passowrd);
+        
 
     }
     const loginInUser = (email, passowrd,) => {
@@ -25,6 +26,7 @@ const Authproviders = ({ children }) => {
                 const loginUser = result.user;
                 setuser(loginUser);
                 console.log(result)
+               
             })
             .catch(error => (
                 console.error(error)
@@ -37,7 +39,6 @@ const Authproviders = ({ children }) => {
         return signInWithPopup(auth, githubprovider)
             .then(result => {
                 const loginUsers = result.user;
-
                 setuser(loginUsers);
             })
             .catch(error => (
@@ -50,6 +51,7 @@ const Authproviders = ({ children }) => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
                  setuser(user);
+                 
             } 
             else {
                 setuser(null);
