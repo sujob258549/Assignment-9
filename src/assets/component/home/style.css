@@ -60,9 +60,12 @@
     box-shadow: 1px 1px 10px;
 }
 
-.hover:hover{
+/* .hover:hover{
     transition: 2s;
     z-index: 999;
     border: 3px solid green;
     background: #fff;
+} */
+.transition{
+    transition: .5s;
 }

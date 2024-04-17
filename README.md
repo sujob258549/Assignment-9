@@ -10,3 +10,4 @@ npm list for react
 8. npm install --save react-toastify
 8. npm install react react-dom leaflet
 8. npm install react-hook-form
+8. npm i react-helmet-async

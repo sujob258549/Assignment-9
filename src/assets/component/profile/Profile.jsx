@@ -2,12 +2,16 @@ import { useContext } from "react";
 import { CreatAuth } from "../firebase/Authproviders";
 import { FaUser } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
+import { Helmet } from "react-helmet-async";
 
 const Profile = () => {
 
     const {user} = useContext(CreatAuth);
     return (
         <div className="border-2 rounded-md w-full md:w-[70%] mx-auto p-5 mb-10 md:p-10">
+             <Helmet>
+                <title>Hospitality Service | Profile</title>
+            </Helmet>
             <p className="text-xl flex "><span className="mr"><FaUser></FaUser></span> <span className="font-semibold"> Your name :</span> <span className="ml-3 ">{user?.displayName ? user?.displayName : "No name input"}</span></p>
            <div className="w-60 py-5">
            <p className="text-xl font-semibold"> Your Photo url:  <span className="ml-3 font-medium brack">{user?.photoURL } </span> </p>

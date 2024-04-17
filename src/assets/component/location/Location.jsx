@@ -1,5 +1,6 @@
 
 import GoogleMapReact from 'google-map-react';
+import { Helmet } from 'react-helmet-async';
 
 export const Location = () => {
     const AnyReactComponent = ({ text }) => <div>{text}</div>;
@@ -14,6 +15,9 @@ export const Location = () => {
 
     return (
         <div style={{ height: '100vh', width: '100%' }}>
+             <Helmet>
+                <title>Hospitality Service | Location</title>
+            </Helmet>
             <GoogleMapReact
                 bootstrapURLKeys={{ key: "" }}
                 defaultCenter={defaultProps.center}

@@ -15,7 +15,7 @@ const StaticSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10 md:py-16 ">
           {
                 allnews.map(singelNews => (
-                    <div  key={singelNews.id} className='border-2 pt-5 shadow hover:-mx-2 -z-1 rounded-md hover'>
+                    <div data-aos="fade-down"  data-aos-duration="5000" key={singelNews.id} className='border-2 transition pt-5 shadow  rounded-md hover'>
                     
                         <h2 className='text-xl px-5 font-semibold'>{singelNews.estate_title}</h2>
                         <img className='px-5 pt-5' src={singelNews.image} alt="" />

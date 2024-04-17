@@ -5,6 +5,7 @@ import { CreatAuth } from "../firebase/Authproviders";
 import { Navigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from "react-helmet-async";
 
 
 const Register = () => {
@@ -57,6 +58,9 @@ const Register = () => {
         <div>
             <div className="image2">
                 <div className="py-10 mx-auto max-w-[90%]">
+                    <Helmet>
+                        <title>Hospitality Service | Register</title>
+                    </Helmet>
 
                     <div className="card shadow shrink-0 w-full md:w-[50%] bg-[#ffffff4e]   mx-auto my-10">
                         <h1 className="text-[35px] font-bold text-center pt-10">Register your account</h1>
