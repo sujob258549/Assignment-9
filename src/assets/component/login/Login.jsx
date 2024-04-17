@@ -52,7 +52,7 @@ const Login = () => {
             <Helmet>
                 <title>Hospitality Service | Login</title>
             </Helmet>
-            <div className="py-10 mx-auto max-w-[90%]">
+            <div data-aos="flip-left" className="py-10 mx-auto max-w-[90%]">
                 <div className="-top-10">
                     <div className="relative card shadow shrink-0 w-full md:w-[50%] lg:w-[40%]  bg-base-100 mx-auto my-10">
                         <div >

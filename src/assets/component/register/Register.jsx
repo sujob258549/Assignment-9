@@ -62,7 +62,7 @@ const Register = () => {
                         <title>Hospitality Service | Register</title>
                     </Helmet>
 
-                    <div className="card shadow shrink-0 w-full md:w-[50%] bg-[#ffffff4e]   mx-auto my-10">
+                    <div className="card shadow shrink-0 w-full md:w-[50%] bg-[#ffffff4e]   mx-auto my-10" data-aos="zoom-in">
                         <h1 className="text-[35px] font-bold text-center pt-10">Register your account</h1>
                         <form className="card-body" onSubmit={handelsubmitRegiste}>
                             <div className="form-control">
