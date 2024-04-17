@@ -8,7 +8,7 @@ const Profile = () => {
 
     const {user} = useContext(CreatAuth);
     return (
-        <div className="border-2 rounded-md w-full md:w-[70%] mx-auto p-5 mb-10 md:p-10">
+        <div className="border-2 rounded-md w-full md:w-[70%] mx-auto p-5 mb-10 md:p-10 mt-10">
              <Helmet>
                 <title>Hospitality Service | Profile</title>
             </Helmet>

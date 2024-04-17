@@ -50,7 +50,7 @@ const router = createBrowserRouter([
             {
                 path: '/statatik/:id',
                 element: <PrivateRoute><Detail></Detail></PrivateRoute>,
-                loader : ()=> fetch('../../public/fecdata.json')
+                loader : ()=> fetch('/fecdata.json')
             }
         ]
     }

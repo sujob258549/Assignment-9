@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
+import { TbDeviceIpadStar } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
 const StaticSection = () => {
@@ -31,6 +32,9 @@ const StaticSection = () => {
                                 <FaLocationDot className='text-xl '> </FaLocationDot>
                                 <p>{singelNews.location}</p>
                             </div>
+                        </div>
+                        <div className="flex justify-end mr-5 mb-10"> 
+                        <Link to={`/statatik/${singelNews.id}`} className="btn w-40   text-right text-white bg-[#400f0fd9] flex items-center hover:text-black"><TbDeviceIpadStar className="text-xl font-bold"></TbDeviceIpadStar> Vew detail</Link>
                         </div>
                     </div>
                 ))

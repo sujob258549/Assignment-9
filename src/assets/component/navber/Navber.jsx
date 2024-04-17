@@ -16,8 +16,9 @@ const Navber = () => {
 
     </>
     return (
-        <div className="w-[90%] mx-auto">
-            <div className="navbar bg-base-100 p-0 my-10">
+      <div className="border-b-2  z-50 bg-yellow-500">
+          <div className="w-[90%] mx-auto">
+            <div className="navbar p-0 py-4 ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -29,7 +30,7 @@ const Navber = () => {
                             }
                         </ul>
                     </div>
-                    <img className="w-20" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFZaHQGbYAtnXUGw6Qp49vkNLVEh6b1Xj-aw&s" alt="" />
+                    <img className="w-20" src="https://i.ibb.co/zHN77Rj/images-removebg-preview.png" alt="" />
                 </div>
                 <div className="navbar-center manu  hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -41,7 +42,7 @@ const Navber = () => {
                 <div className="navbar-end relative">
                     {user ? <div className="flex gap-2 items-center ">
                         <div className="tooltip text-xl font-medium" data-tip={user.displayName ? user.displayName : 'No name'}>
-                            <img className="w-14 border-2 border-black rounded-full" src={user?.photoURL ? user?.photoURL :"https://i.ibb.co/f1tc2Q5/240-F-229758328-7x8jw-Cwjt-BMm-C6rg-Fz-LFh-Zo-Ep-Lob-B6-L8-removebg-preview.png"} alt="NO Image" />
+                            <img className="w-14 border border-white rounded-full" src={user?.photoURL ? user?.photoURL :"https://i.ibb.co/f1tc2Q5/240-F-229758328-7x8jw-Cwjt-BMm-C6rg-Fz-LFh-Zo-Ep-Lob-B6-L8-removebg-preview.png"} alt="NO Image" />
                         </div>
 
                         <button onClick={signout} className="btn text-xl font-medium text-white px-5 hover:text-black bg-[#7AA93C] rounded-md">Sign Out</button>
@@ -52,6 +53,7 @@ const Navber = () => {
                 </div>
             </div>
         </div>
+      </div>
     );
 };
 

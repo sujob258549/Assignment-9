@@ -9,7 +9,7 @@ const Detail = () => {
     const singeldetail = allDetail.find(detail => detail.id === parseInt(id))
     console.log(singeldetail)
     return (
-        <div>
+        <div className="w-[90%] mx-auto">
             {
                 <div className=" grid grid-cols-1 items-center lg:grid-cols-2 py-10 gap-10">
                     <div className="">

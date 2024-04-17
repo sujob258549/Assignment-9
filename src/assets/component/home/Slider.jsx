@@ -17,7 +17,7 @@ import { IoIosContact } from 'react-icons/io';
 
 const Slider = () => {
     return (
-        <div>
+        <div className='mt-5'>
             <Swiper
                 cssMode={true}
                 navigation={true}
