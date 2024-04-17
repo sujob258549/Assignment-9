@@ -12,7 +12,7 @@ const About = () => {
             <Helmet>
                 <title>Hospitality Service | About</title>
             </Helmet>
-                <div data-aos="fade-right" className="flex bg-slate-300 p-2 items-center my-8">
+                <div  className="flex bg-slate-300 p-2 items-center my-8">
                     <button className="md:btn btn-sm rounded-none text-sm md:text-xl font-medium text-white bg-[#4f903574]">Hospitality</button>
                     <marquee direction="left" className="font-semibold text-[18px] ">
                         <p className="flex items-center"> Welcome to Our Hospitality

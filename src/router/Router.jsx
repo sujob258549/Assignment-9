@@ -9,6 +9,7 @@ import Location from "../assets/component/location/Location";
 import Profile from "../assets/component/profile/Profile";
 import Updateprofile from "../assets/component/profile/Updateprofile";
 import About from "../assets/component/about/About";
+import Errorpage from "../assets/component/errorpage/Errorpage";
 
 
 const router = createBrowserRouter([
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement: <Errorpage></Errorpage>,
         children:[
             {
                 path: '/',

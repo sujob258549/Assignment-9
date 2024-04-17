@@ -20,7 +20,7 @@ const Login = () => {
         provider()
             .then((result) => {
                 navigate(from);
-                console.log(result)
+                console.log(result.user)
             })
             .catch((error) => {
                 console.error(error);

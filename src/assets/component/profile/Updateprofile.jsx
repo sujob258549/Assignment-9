@@ -1,13 +1,30 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { CreatAuth } from "../firebase/Authproviders";
 import { FaUser } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
+import { CirclesWithBar } from "react-loader-spinner";
 
 const UpdateProfile = () => {
     
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const {upadateprofile} = useContext(CreatAuth);
+    const {upadateprofile , loding} = useContext(CreatAuth);
+    if (loding) {
+        return <div className="absolute top-[50%] left-[50%]">
+           <CirclesWithBar
+                height="100"
+                width="100"
+                color="#4fa94d"
+                outerCircleColor="#4fa94d"
+                innerCircleColor="#4fa94d"
+                barColor="#4fa94d"
+                ariaLabel="circles-with-bar-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+                visible={true}
+            />
+        </div>
+    }
 
     const onSubmit = data => {
         console.log(data); 

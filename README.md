@@ -1,3 +1,6 @@
+livesite name : assinment-9-react.web.app
+livelink : https://assinment-9-react.web.app/
+
 
 npm list for react
 1. npm install react-router-dom localforage match-sorter sort-by
@@ -8,6 +11,18 @@ npm list for react
 6. npm install firebase
 7. npm install react icone 
 8. npm install --save react-toastify
-8. npm install react react-dom leaflet
-8. npm install react-hook-form
-8. npm i react-helmet-async
+9. npm install react react-dom leaflet
+10. npm install react-hook-form
+11. npm i react-helmet-async
+12. npm install aos --save
+12. npm install react-loader-spinner --save
+12. npm install -g firebase-tools
+
+
+fetuse websute 
+
+1. this website you whent to any hospitality come now
+2. this hospitakity website is vary profational 
+3. new resort add  to this website early
+4. out problem solve saport time alose rady any problem solve any time 
+5. my hospitality website accive time alose whenw no problem this webwite 

@@ -6,6 +6,7 @@ import { Navigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from "react-helmet-async";
+// import { CirclesWithBar } from "react-loader-spinner";
 
 
 const Register = () => {
@@ -13,6 +14,22 @@ const Register = () => {
     const [signupError, setsignupError] = useState('');
     const [successSignIn, setsuccessSignIn] = useState('');
     const { creatUser, upadateprofile } = useContext(CreatAuth)
+    // if (loding) {
+    //     return <div className="absolute top-[50%] left-[50%]">
+    //        <CirclesWithBar
+    //             height="100"
+    //             width="100"
+    //             color="#4fa94d"
+    //             outerCircleColor="#4fa94d"
+    //             innerCircleColor="#4fa94d"
+    //             barColor="#4fa94d"
+    //             ariaLabel="circles-with-bar-loading"
+    //             wrapperStyle={{}}
+    //             wrapperClass=""
+    //             visible={true}
+    //         />
+    //     </div>
+    // }
     const handelsubmitRegiste = e => {
         e.preventDefault();
         setsignupError('')
@@ -62,7 +79,7 @@ const Register = () => {
                         <title>Hospitality Service | Register</title>
                     </Helmet>
 
-                    <div className="card shadow shrink-0 w-full md:w-[50%] bg-[#ffffff4e]   mx-auto my-10" data-aos="zoom-in">
+                    <div className="card shadow shrink-0 w-full md:w-[50%] bg-[#ffffff4e]   mx-auto my-10" data-aos="zoom-in" data-aos-duration="5500">
                         <h1 className="text-[35px] font-bold text-center pt-10">Register your account</h1>
                         <form className="card-body" onSubmit={handelsubmitRegiste}>
                             <div className="form-control">

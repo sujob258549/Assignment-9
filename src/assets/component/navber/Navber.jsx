@@ -41,7 +41,7 @@ const Navber = () => {
                 <div className="navbar-end relative">
                     {user ? <div className="flex gap-2 items-center ">
                         <div className="tooltip text-xl font-medium" data-tip={user.displayName ? user.displayName : 'No name'}>
-                            <img className="w-14 border-2 border-black rounded-full" src={user?.photoURL} alt="NO Image" />
+                            <img className="w-14 border-2 border-black rounded-full" src={user?.photoURL ? user?.photoURL :"https://i.ibb.co/f1tc2Q5/240-F-229758328-7x8jw-Cwjt-BMm-C6rg-Fz-LFh-Zo-Ep-Lob-B6-L8-removebg-preview.png"} alt="NO Image" />
                         </div>
 
                         <button onClick={signout} className="btn text-xl font-medium text-white px-5 hover:text-black bg-[#7AA93C] rounded-md">Sign Out</button>

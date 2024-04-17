@@ -6,21 +6,26 @@ export const CreatAuth = createContext(null);
 const Authproviders = ({ children }) => {
 
     const [user, setuser] = useState(null)
+    const [loding , setloding] = useState(true);
 
     const googleprovider = new GoogleAuthProvider();
     const githubprovider = new GithubAuthProvider();
 
     const creatUser = (email, passowrd) => {
+        setloding(false)
+        signout();
         return createUserWithEmailAndPassword(auth, email, passowrd);
         
 
     }
     const loginInUser = (email, passowrd,) => {
+        setloding(false)
         return signInWithEmailAndPassword(auth, email, passowrd)
     }
 
     // google
     const signInGoogle = () => {
+        setloding(false)
         return signInWithPopup(auth, googleprovider)
             .then(result => {
                 const loginUser = result.user;
@@ -36,6 +41,7 @@ const Authproviders = ({ children }) => {
     // github
 
     const signIngithub = () => {
+        setloding(false)
         return signInWithPopup(auth, githubprovider)
             .then(result => {
                 const loginUsers = result.user;
@@ -50,7 +56,9 @@ const Authproviders = ({ children }) => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
-                 setuser(user);
+                setuser(user);
+                console.log(user)
+                setloding(false)
                  
             } 
             else {
@@ -74,6 +82,7 @@ const Authproviders = ({ children }) => {
 
     // update data
     const upadateprofile = (name, image) => {
+        setloding(false)
         updateProfile(auth.currentUser, {
             displayName: name,
             photoURL: image
@@ -87,7 +96,8 @@ const Authproviders = ({ children }) => {
         signIngithub,
         user,
         signout,
-        upadateprofile
+        upadateprofile,
+        loding
     }
     return (
         <CreatAuth.Provider value={authinfo}>
