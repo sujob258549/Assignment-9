@@ -39,7 +39,7 @@ const UpdateProfile = () => {
                 <Helmet>
                     <title>Hospitality Service | Update profile</title>
                 </Helmet>
-                <div><FaUser className="text-7xl mx-auto mt-12 p-2 border  border-black rounded-full"></FaUser></div>
+                <div className=""><FaUser className="text-7xl mx-auto mt-12 p-2 border  border-black rounded-full"></FaUser></div>
                 <h2 className="text-3xl pt-8 font-bold text-center">Update profile Information</h2>
                 <form className="card-body" onSubmit={handleSubmit(onSubmit)}>
                     <div className="form-control">

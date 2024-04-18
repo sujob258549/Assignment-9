@@ -8,7 +8,9 @@ const Profile = () => {
 
     const {user} = useContext(CreatAuth);
     return (
-        <div className="border-2 rounded-md w-full md:w-[70%] mx-auto p-5 mb-10 md:p-10 mt-10">
+       <div className="upimg1">
+        <div className="py-10 md:py-28 px-5"data-aos="zoom-in-up">
+        <div className="border-2 rounded-md w-full md:w-[70%] mx-auto p-5 mb-10 md:p-10 bg-[#539c6b5d]">
              <Helmet>
                 <title>Hospitality Service | Profile</title>
             </Helmet>
@@ -20,6 +22,8 @@ const Profile = () => {
          
             
         </div>
+        </div>
+       </div>
     );
 };
 
