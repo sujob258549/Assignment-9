@@ -16,12 +16,13 @@ npm list for react
 11. npm i react-helmet-async
 12. npm install aos --save
 12. npm install react-loader-spinner --save
-12. npm install -g firebase-tools
+13. npm install -g firebase-tools
+14. npm i react-circular-progressbar
 
 
 fetuse websute 
 
-1. this website you whent to any hospitality come now
+1. this website you whent to any hospitality  servise now
 2. this hospitakity website is vary profational 
 3. new resort add  to this website early
 4. out problem solve saport time alose rady any problem solve any time 
